@@ -1,0 +1,51 @@
+#mainmap {
+    margin-top: 20px;
+    height: 590px;
+    background: #fff;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.dropDownList {
+    position: relative;
+    min-width: 300px;
+}
+.listLabel {
+    font-size: 30px;
+    color: #000;
+}
+.listArrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #000000;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    cursor: pointer;
+}
+.listPanel {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 325px;
+    padding-left: 15px;
+    list-style: none;
+    margin: 0;
+    left: 0px;
+    z-index: 2;
+    position: absolute;
+    top: 54px;
+}
+.listPanel li {
+    cursor: pointer;
+}
+.listPanel li:hover {
+    color:grey;
+}
+
+.showList {
+    display: none;
+}
