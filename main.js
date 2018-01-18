@@ -131,6 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
         intervalID = setInterval(getBusPosition, 10000);
     }
 
+
     btn.addEventListener('click', getLine);
+
+    //initiating map in browser
     window.initMap = initMap;
 });
