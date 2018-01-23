@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let apikeyztm = '0fa53ab8-a1ab-49e8-9ecc-efa5c9c5fdee';
     let apikeyggogle= 'AIzaSyAAPCxh-TBdt4nQBQs9WA3zaKSE-1JgjvI';
     let map, markerBus, markerStop, numberLine;
-    let arrayNumberLine = [];
     markerBus = 0;
     const line = document.querySelector('.line');
     const btn = document.querySelector('.btn');
@@ -76,14 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
         deleteMarkers();
 
         //getting new data(bus positions)
-        fetch(apiZTM + numberLine)
+        fetch(apiZTM + numberLine, {'mode': 'no-cors'})
             .then( res => res.json())
             .then( items => {
 
                 //transmission data to function
                 createMarkers(items.result);
             })
-    }
+    };
 
     //intiating map
     function initMap() {
@@ -136,4 +135,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //initiating map in browser
     window.initMap = initMap;
+
+
 });
