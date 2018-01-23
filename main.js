@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         deleteMarkers();
 
         //getting new data(bus positions)
-        fetch(apiZTM + numberLine, {'mode': 'no-cors'})
+        fetch(apiZTM + numberLine, {mode: 'no-cors'})
             .then( res => res.json())
             .then( items => {
 
