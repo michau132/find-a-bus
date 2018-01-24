@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     markerBus = 0;
     const line = document.querySelector('.line');
     const btn = document.querySelector('.btn');
-    const apiZTM = 'https://api.um.warszawa.pl/api/action/busestrams_get/?resource_id=f2e5503e-927d-4ad3-9500-4ab9e55deb59&apikey=0fa53ab8-a1ab-49e8-9ecc-efa5c9c5fdee&type=1&line=';
+    const apiZTM = 'https://cors.io/?https://api.um.warszawa.pl/api/action/busestrams_get/?resource_id=f2e5503e-927d-4ad3-9500-4ab9e55deb59&apikey=0fa53ab8-a1ab-49e8-9ecc-efa5c9c5fdee&type=1&line=';
     const showLi = document.querySelector('.dropDownList');
     const list = document.querySelector('.listPanel');
     let childList = list.children;
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         deleteMarkers();
 
         //getting new data(bus positions)
-        fetch(apiZTM + numberLine)
+        fetch(apiZTM + numberLine, {mode: 'no'})
             .then( res => res.json())
             .then( items => {
 
