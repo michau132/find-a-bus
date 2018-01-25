@@ -1,26 +1,35 @@
+body {
+    background-color: rgba(43,70,102, 1);
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+}
 #mainmap {
     margin-top: 20px;
-    height: 590px;
-    background: #fff;
+    height: 550px;
+    width: 100%;
 }
 .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
 }
 .dropDownList {
     position: relative;
     min-width: 300px;
 }
 .listLabel {
-    font-size: 30px;
-    color: #000;
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
 }
 .listArrow {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid #000000;
+    border-top: 15px solid #ccc;
     display: block;
     position: absolute;
     right: 14px;
@@ -28,8 +37,7 @@
     cursor: pointer;
 }
 .listPanel {
-    background-color: white;
-    border: 1px solid #ccc;
+    background: rgba(43,70,102, .6);
     width: 325px;
     padding-left: 15px;
     list-style: none;
@@ -37,15 +45,37 @@
     left: 0px;
     z-index: 2;
     position: absolute;
-    top: 54px;
+    top: 52px;
 }
 .listPanel li {
     cursor: pointer;
 }
 .listPanel li:hover {
-    color:grey;
+    color:rgb(160,227,240);
 }
 
+.btn {
+    padding: 3px 8px;
+    background-color: #B8DBF2;
+    color: rgba(43,70,102, 1);
+    border: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    outline: none;
+}
+.btn:hover {
+    background-color: darkblue;
+    color: #ccc;
+}
+.line {
+    outline: none;
+    border: 1px solid black;
+    background: #B8DBF2;
+    border-radius: 4px;
+}
+.line:focus {
+    border-color: darkblue;
+}
 .showList {
     display: none;
 }
