@@ -5,7 +5,7 @@ Find a bus is an example of using AJAX.
 
 This app is showing actual position of single bus in Warsaw.
 
-If you want to see how it's work just download this repo.
+If you want to see how it's work just fork this repo. 
 
 And open a file index.html with your browser.
 
