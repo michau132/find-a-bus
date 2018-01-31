@@ -79,3 +79,9 @@ body {
 .showList {
     display: none;
 }
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
+}
